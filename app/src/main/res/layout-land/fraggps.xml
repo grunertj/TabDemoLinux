@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keepScreenOn="true"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:id="@+id/imageViewCompassBackGroundGPS"
+        android:src="@drawable/compass"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        />
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/pointer_cyan_transparent"
+        android:id="@+id/imageViewNeedleGPS"
+        android:layout_alignLeft="@+id/imageViewCompassBackGroundGPS"
+        android:layout_alignStart="@+id/imageViewCompassBackGroundGPS"
+        android:layout_marginLeft="70dp"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        />
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/pointer_red_transparent"
+        android:id="@+id/imageViewNeedleDestGPS"
+        android:layout_alignLeft="@+id/imageViewCompassBackGroundGPS"
+        android:layout_alignStart="@+id/imageViewCompassBackGroundGPS"
+        android:layout_marginLeft="70dp"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        />
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/pointer_green_transparent"
+        android:id="@+id/imageViewNeedleDiffGPS"
+        android:layout_alignLeft="@+id/imageViewCompassBackGroundGPS"
+        android:layout_alignStart="@+id/imageViewCompassBackGroundGPS"
+        android:layout_marginLeft="70dp"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/textViewFraggps1"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageViewCompassBackGroundGPS"
+        android:layout_toEndOf="@+id/imageViewCompassBackGroundGPS" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/textViewFraggps2"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_below="@+id/textViewFraggps1"
+        android:layout_centerHorizontal="true"
+        android:layout_alignLeft="@+id/textViewFraggps1"
+        android:layout_alignStart="@+id/textViewFraggps1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/textViewFraggps3"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_below="@+id/textViewFraggps2"
+        android:layout_centerHorizontal="true"
+        android:layout_alignLeft="@+id/textViewFraggps2"
+        android:layout_alignStart="@+id/textViewFraggps2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/textViewFraggps4"
+        android:layout_below="@+id/textViewFraggps3"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_centerHorizontal="true"
+        android:layout_alignLeft="@+id/textViewFraggps3"
+        android:layout_alignStart="@+id/textViewFraggps3" />
+</RelativeLayout>

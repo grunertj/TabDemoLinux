@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.werner_jensgrunert.tabdemo.Fragment5"
+    android:orientation="horizontal"
+    android:rowCount="16"
+    android:columnCount="19"
+    android:id="@+id/gl">
+
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:max="360"
+        android:progress="1"
+        android:indeterminate="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:thumbTint="#c02929"
+        android:thumb="@drawable/abc_scrubber_control_to_pressed_mtrl_005"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageViewYellow"
+        android:src="@drawable/pointer_yellow"
+        android:layout_marginLeft="67dp"
+        android:layout_marginStart="67dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="17dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageViewRed"
+        android:src="@drawable/pointer_red"
+        android:layout_alignTop="@+id/imageViewGreen"
+        android:layout_alignLeft="@+id/imageViewCyan"
+        android:layout_alignStart="@+id/imageViewCyan" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageViewCyan"
+        android:src="@drawable/pointer_cyan"
+        android:layout_above="@+id/textViewValue0"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="62dp"
+        android:layout_marginEnd="62dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageViewGreen"
+        android:src="@drawable/pointer_green"
+        android:layout_marginRight="34dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/imageViewYellow"
+        android:layout_alignLeft="@+id/imageViewYellow"
+        android:layout_alignStart="@+id/imageViewYellow" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Angle"
+        android:id="@+id/textViewAngle"
+        android:layout_above="@+id/imageViewGreen"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/textViewValue0"
+        android:layout_below="@+id/textViewAngle"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/textViewValue1"
+        android:layout_below="@+id/textViewValue0"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="SeekBar"
+        android:id="@+id/textViewValue2"
+        android:layout_below="@+id/textViewValue1"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
